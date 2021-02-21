@@ -1,17 +1,23 @@
-import react from "react";
+import React, { Component } from "react";
 import './App.css';
 import Ex1 from "./Ex1.js";
+import NandD from "./NandD";
 
-function App() {
+class App extends Component {
+  constructor(props){
+    super(props);
 
-  return (
-    <div className="App">
-      <header>
-          <meta charset="utf-8"></meta>
-      </header>
-      <Ex1></Ex1>
-    </div>
-  );
+  }
+  render(){
+    return (
+      <div>
+        <NandD></NandD>
+        <ul>
+          <p>hello</p>
+        </ul>
+      </div>
+    );
+  }
 }
 
 export default App;
