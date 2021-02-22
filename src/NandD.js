@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Ex1 from "./Ex1";
 
 class NandD extends Component {
     constructor(props){
@@ -25,7 +24,7 @@ class NandD extends Component {
             target.style.backgroundColor='white';
             target.style.color='black';
         }
-    };
+    }
     render(){
         return (
             <body>

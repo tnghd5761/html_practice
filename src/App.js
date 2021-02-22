@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './App.css';
-import Ex1 from "./Ex1.js";
 import NandD from "./NandD";
 
 class App extends Component {
