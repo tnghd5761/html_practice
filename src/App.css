@@ -1,0 +1,18 @@
+body {
+    color : powderblue;
+    font-family: Arial;
+    text-align: center;
+}
+.emptyBody{
+    font-family: Arial;
+    text-align: center;
+}
+.emptySpace{
+    height: 300px;
+    margin:300px;
+}
+.backg{
+    background-image:url('moveBackground.gif');
+    background-repeat: no-repeat;
+    background-size : cover;
+}

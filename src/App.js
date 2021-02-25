@@ -1,20 +1,27 @@
 import React, { Component } from "react";
+import ReactDom from 'react-dom';
 import './App.css';
-import NandD from "./NandD";
 
 class App extends Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      
+    }
   }
   render(){
     return (
-      <div>
-        <NandD></NandD>
-        <ul>
+      <>
+        <title>suhong_practice</title>
+        
+        <div className='backg'>
+          <span className='emptySpace'></span>
+          <p>hi</p>
           <p>hello</p>
-        </ul>
-      </div>
+          <p className="emptySpace"></p>
+        </div>
+      </>
     );
   }
 }
