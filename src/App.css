@@ -1,18 +1,44 @@
 body {
+    background-image:url('moveBackground.gif');
+    background-repeat: no-repeat;
+    background-size : contain;
     color : powderblue;
-    font-family: Arial;
-    text-align: center;
-}
-.emptyBody{
-    font-family: Arial;
-    text-align: center;
 }
 .emptySpace{
     height: 300px;
     margin:300px;
 }
-.backg{
-    background-image:url('moveBackground.gif');
-    background-repeat: no-repeat;
-    background-size : cover;
+.d_top{
+    width:100%;
+    height:100px;
+    background-color: purple;
+    text-align:center;
+}
+.d_menu1{
+    width:20%;
+    height:300px;
+    float:left;
+    /* background-color:salmon; */
+    text-align:center;
+}
+.d_menu1:hover{
+    background: linear-gradient(to left, rgba(0,0,0,0), green);
+}
+.d_menu2{
+    width:20%;
+    height:300px;
+    float:right;
+    /* background-color:salmon; */
+    text-align:center;
+}
+.d_menu2:hover{
+    background: linear-gradient(to right, rgba(0,0,0,0), blue);
+}
+.d_con{
+    width:60%;
+    height:300px;
+    float:left;
+    /* background-color: red; */
+    /* background-size: 100%100%; */
+    text-align: center;
 }

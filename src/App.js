@@ -15,12 +15,19 @@ class App extends Component {
       <>
         <title>suhong_practice</title>
         
-        <div className='backg'>
-          <span className='emptySpace'></span>
-          <p>hi</p>
-          <p>hello</p>
+        <body>
+          <div className="d_top"></div>
+          <div className="d_menu1">
+            <p>hi</p>
+          </div>
+          <div className="d_con">
+            <p>hello</p>
+          </div>
+          <div className="d_menu2">
+            <p>bye</p>
+          </div>
           <p className="emptySpace"></p>
-        </div>
+        </body>
       </>
     );
   }
