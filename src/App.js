@@ -1,6 +1,34 @@
 import React, { Component } from "react";
 import ReactDom from 'react-dom';
 import './App.css';
+import $ from 'jquery';
+
+var typingBool = false; 
+var typingIdx=0; 
+var typingTxt = $(".typing-txt").text();
+typingTxt = typingTxt.split("");
+if(typingBool==false){
+  typingBool=true; 
+  
+  var tyInt = setInterval(typing,150);
+} 
+
+function typing(){ 
+  if(typingIdx < typingTxt.length){
+    $(".typing").append(typingTxt[typingIdx]);
+    typingIdx++; 
+  } else{
+    clearInterval(tyInt);
+
+    setTimeout(function(){
+      typingBool = false;
+      typingIdx = 0;
+      typingTxt = $(".typing-txt").text();
+      $(".typing").html("")
+      tyInt = setInterval(typing, 150);
+    }, 1000);
+  } 
+}
 
 class App extends Component {
   constructor(props){
@@ -11,22 +39,27 @@ class App extends Component {
     }
   }
   render(){
+    
     return (
       <>
         <title>suhong_practice</title>
         
         <body>
-          <div className="d_top"></div>
+          <div></div>
           <div className="d_menu1">
             <p>hi</p>
           </div>
           <div className="d_con">
-            <p>hello</p>
+            <h1>
+              <p className="typing-txt">
+                Self Cloning Practice!<html>&nbsp;</html>
+              </p>
+              <p className="typing"></p>
+            </h1>
           </div>
           <div className="d_menu2">
             <p>bye</p>
           </div>
-          <p className="emptySpace"></p>
         </body>
       </>
     );
