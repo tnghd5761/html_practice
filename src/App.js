@@ -26,7 +26,7 @@ function typing(){
       typingTxt = $(".typing-txt").text();
       $(".typing").html("")
       tyInt = setInterval(typing, 150);
-    }, 1000);
+    }, 2000);
   } 
 }
 
@@ -45,21 +45,22 @@ class App extends Component {
         <title>suhong_practice</title>
         
         <body>
-          <div></div>
-          <div className="d_menu1">
-            <p>hi</p>
-          </div>
-          <div className="d_con">
-            <h1>
-              <p className="typing-txt">
-                Self Cloning Practice!<html>&nbsp;</html>
-              </p>
-              <p className="typing"></p>
-            </h1>
-          </div>
-          <div className="d_menu2">
-            <p>bye</p>
-          </div>
+          <section className="maincover">
+            <div className="d_menu1">
+              <p>hi</p>
+            </div>
+            <div className="d_con">
+              <h1>
+                <p className="typing-txt">
+                  Self Cloning Practice!<html>&nbsp;</html>
+                </p>
+                <p className="typing"></p>
+              </h1>
+            </div>
+            <div className="d_menu2">
+              <p>bye</p>
+            </div>
+          </section>
         </body>
       </>
     );
