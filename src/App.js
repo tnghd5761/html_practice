@@ -44,10 +44,14 @@ class App extends Component {
       <>
         <title>suhong_practice</title>
         
-        <body>
-          <div>
-            <header>
-              <div className="container">
+        <body className="portal fullscreen">
+          <div className="wrap">
+            <header className="header">
+              <h1>
+                <a href="./">Be the one</a>
+              </h1>
+            </header>
+            <div className="container">
                 <article className="content">
                   <section className="cover portal_cover">
                     <div className="inner">
@@ -68,12 +72,19 @@ class App extends Component {
                             <span>바로가기</span>
                           </a>
                         </li>
+                        <li>
+                          <a className="::after">
+                            <div className="::before">
+                              After
+                            </div>
+                            미래
+                            <span>바로가기</span>
+                          </a></li>
                       </ul>
                     </div>
                   </section>
                 </article>
               </div>
-            </header>
           </div>
         </body>
       </>
