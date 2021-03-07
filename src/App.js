@@ -60,25 +60,32 @@ class App extends Component {
                           SH Cloning Practice<html>&nbsp;</html>
                         </p>
                         <p className="typing"></p>
+                        <div className="appear">
+                          <html>&nbsp;</html>
+                          I can do
+                        </div>
                       </h2>
-                      <p>I can do</p>
                       <ul>
                         <li>
-                          <a className="::after">
-                            <div className="::before">
-                              Before
+                          <a>
+                            <div>
+                              <strong>Before</strong>
                             </div>
-                            과거
-                            <span>바로가기</span>
+                            <strong>과거</strong>
+                            <div>
+                            <strong>바로가기</strong>
+                            </div>
                           </a>
                         </li>
                         <li>
-                          <a className="::after">
-                            <div className="::before">
-                              After
+                          <a>
+                            <div>
+                            <strong>After</strong>
                             </div>
-                            미래
-                            <span>바로가기</span>
+                            <strong>미래</strong>
+                            <div>
+                            <strong>바로가기</strong>
+                            </div>
                           </a></li>
                       </ul>
                     </div>
